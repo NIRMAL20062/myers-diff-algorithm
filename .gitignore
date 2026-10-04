@@ -1,0 +1,17 @@
+# cpsdiff results and build output
+.cpsdiff/
+__pycache__/
+*.class
+out/
+mydiff
+mydiff.exe
+
+# editors and systems
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# assignment PDFs and my own tests (not part of the submission)
+*.pdf
+my-tests/
