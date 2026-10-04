@@ -13,9 +13,7 @@ import sys
 from array import array
 
 
-# ---------------------------------------------------------------------------
 # Reading input
-# ---------------------------------------------------------------------------
 
 def read_lines(path):
     """Read a file as raw bytes and split it into lines (without the \\n)."""
@@ -27,9 +25,7 @@ def read_lines(path):
     return lines
 
 
-# ---------------------------------------------------------------------------
 # Myers' algorithm
-# ---------------------------------------------------------------------------
 
 def myers(a, b):
     """Return the matched pairs (x, y), with a[x] == b[y], of a shortest edit
@@ -140,9 +136,7 @@ def matched_pairs(a, b):
     return pairs
 
 
-# ---------------------------------------------------------------------------
 # Part B: changed characters inside a line pair
-# ---------------------------------------------------------------------------
 
 def changed_ranges(kept, length):
     """Turn the sorted kept positions into "start-end" ranges of the rest."""
@@ -166,9 +160,7 @@ def highlight_line(old_line, new_line):
     return f"? {old_ranges} | {new_ranges}\n".encode()
 
 
-# ---------------------------------------------------------------------------
 # Output
-# ---------------------------------------------------------------------------
 
 def render(a, b, pairs, highlight):
     """Build the whole output. Between two kept lines there is one change
